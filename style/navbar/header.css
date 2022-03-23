@@ -1,0 +1,90 @@
+.icons i {
+    font-size: 26px;
+    cursor: pointer;
+    padding: 8px;
+}
+
+.icons a {
+    color: #fff;
+}
+
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.navbar {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 24px;
+}
+
+.buttons ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 16px;
+
+    margin-right: 8px;
+}
+
+.buttons ul li {
+    text-align: center;
+    padding: 12px;
+}
+
+.buttons ul li a {
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+
+    border-bottom: 2px solid transparent;
+    transition: 400ms;
+}
+
+.buttons ul li a:hover {
+    border-bottom: 2px solid #fff;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 10px 16px;
+    background-color: #fff;
+    color: #2c2c2c;
+    cursor: pointer;
+
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+
+    transition: 400ms ease;
+
+    transform-style: preserve-3d;
+    text-decoration: none;
+}
+
+.button::after {
+    top: -100%;
+    left: 0px;
+    padding: 12px 29px;
+    position: absolute;
+    background-color: #2c2c2c;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 8px;
+    content: 'Baixar';
+    transform-origin: left bottom;
+    transform: rotateX(90deg);
+}
+
+.button:hover {
+    transform-origin: center bottom;
+    transform: rotateX(-90deg) translateY(100%);
+}

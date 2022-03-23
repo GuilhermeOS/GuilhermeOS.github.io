@@ -1,0 +1,41 @@
+.hardSkills {
+    margin-top: 44px;
+    margin-bottom: 44px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row: 1;
+
+    overflow-x: auto;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+    height: 250px;
+}
+
+
+.hardSkills::-webkit-scrollbar {
+    display: none;
+}
+
+.hardSkills .card {
+    max-width: 200px;
+    max-height: 250px;
+
+    padding: 8px;
+}
+
+.hardSkills .card p {
+    text-align: center;
+}
+
+.hardSkills .card img {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+.hide-scrollbar {
+    overflow: auto;
+    -ms-overflow-style: none; /* IE 11 */
+    scrollbar-width: none; /* Firefox 64 */
+}
