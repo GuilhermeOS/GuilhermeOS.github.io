@@ -3,12 +3,11 @@
     grid-template-columns: repeat(1, 1fr);
     grid-row: 1;
     width: 600px;
-    height: 420px;
+    height: 425px;
     padding: 40px;
-
+    margin-bottom: 30px;
     overflow-y: auto;
     scroll-behavior: smooth;
-    margin-bottom: 44px;
 }
 
 .projects::-webkit-scrollbar {
@@ -33,4 +32,23 @@
 
 .project img {
     width: 100%;
+}
+
+
+@media screen and (max-width: 600px) {
+    .project p {
+        text-align: justify;
+    }
+
+    .projects {
+        width: 80%;
+        height: 330px;
+    }
+}
+
+@media screen and (min-width: 610px) and (max-width: 830px) {
+    .projects {
+        width: 80%;
+        height: 370px;
+    }
 }

@@ -88,3 +88,9 @@
     transform-origin: center bottom;
     transform: rotateX(-90deg) translateY(100%);
 }
+
+@media screen and (max-width: 830px) {
+    .navbar {
+        display: none;
+    }
+}

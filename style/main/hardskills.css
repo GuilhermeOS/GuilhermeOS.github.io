@@ -39,3 +39,19 @@
     -ms-overflow-style: none; /* IE 11 */
     scrollbar-width: none; /* Firefox 64 */
 }
+
+@media screen and (max-width: 530px) {
+    .hardSkills {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-row: 1;
+    }
+}
+
+@media screen and (min-width: 535px) and (max-width: 830px) {
+    .hardSkills {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-row: 1;
+    }
+}

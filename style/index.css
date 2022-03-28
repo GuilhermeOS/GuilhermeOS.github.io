@@ -1,7 +1,8 @@
 body {
     background-image: url("../img/fundo.gif");
-    background-repeat: no-repeat;
-    background-size: cover;
+    image-rendering: auto;
+    background-repeat: repeat;
+    background-size: contain;
     min-height: 100vh;
 
     font-family: 'Oswold', sans-serif;
@@ -12,3 +13,4 @@ body {
 }
 
 html {overflow: -moz-scrollbars-none;}
+
