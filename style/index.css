@@ -1,3 +1,8 @@
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #001a2b #fff;
+}
+
 body {
     background-image: url("../img/fundo.gif");
     image-rendering: auto;
@@ -10,6 +15,19 @@ body {
     color: #fff;
 
     scrollbar-width: none;
+}
+
+body::-webkit-scrollbar {
+    width: 8px;
+}
+
+body::-webkit-scrollbar-track {
+    background: #001a2b;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #fff;
+    border-radius: 20px;
 }
 
 html {overflow: -moz-scrollbars-none;}

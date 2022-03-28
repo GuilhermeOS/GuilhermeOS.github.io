@@ -25,6 +25,9 @@
     <link rel="stylesheet" href="./style/main/hardskills.css">
     <link rel="stylesheet" href="./style/main/projects.css">
 
+    <!-- ESTILO MODAL -->
+    <link rel="stylesheet" href="./style/main/contatos.css">
+
     <!-- FONT AWESOME -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
@@ -37,12 +40,19 @@
         <div class="buttons">
             <ul>
                 <li><a href="#presentation" title="Sobre Mim">Sobre Mim</a></li>
-                <li><a href="" title="Contatos">Contatos</a></li>
+                <li><a href="#dv-modal" title="Contatos" class="openModal" onclick="openModal('dv-modal')">Contatos</a></li>
                 <li><a href="#projects" title="Projetos">Projetos</a></li>
             </ul>
-            <a href="./download/curriculo.pdf" download="Curriculo Guilherme OS" target="_blank" class="button">Currículo</a>
+            <a href="./download/curriculo.pdf" download="Curriculo Guilherme OS" class="button">Currículo</a>
         </div>
     </header>
+
+    <div class="mobile-menu">
+        <div class="icons-mobile">
+            <a href="https://www.linkedin.com/in/guilherme-oribka-serafim/" target="_blank"><i class="fa-brands fa-linkedin-in" title="Linkedin"></i></a></i>
+            <a href="https://github.com/GuilhermeOS" target="_blank"><i class="fa-brands fa-github" title="GitHub"></i></a>
+        </div>
+    </div>
 
     <main>
         <div class="profile">
@@ -52,7 +62,7 @@
                     <p>
                         Oi, eu sou o
                         <h1>Guilherme Oribka Serafim</h1>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio, adipisci? Blanditiis labore temporibus, atque quaerat doloremque, placeat deleniti saepe quas consectetur, eligendi sunt quos delectus. Culpa expedita cupiditate voluptates excepturi.
+                        Estudo para ser programador Full Stack, mas com maiores conhecimentos em Front End. Universitáio do curso de Ciência da Computação na Estácio/SC, e participante do programa Jovem Programador do Senac/SC.
                     </p>
                 </div>
             </div>
@@ -96,16 +106,38 @@
                     <a href="https://github.com/GuilhermeOS/Projetos" target="_blank">Código do Projeto</a>
                 </div>
                 <div class="project">
-                    <h2>Projeto Agenda</h2>
-                    <img src="./img/projeto_agenda.jpeg" alt="">
+                    <h2>Projeto E-commerce</h2>
+                    <img src="./img/loja.png" alt="">
                     <p>
-                        Esse é projeto do programa Jovem Programador onde o objetivo
-                        é a criação de uma agenda de contatos. Criei o site usando React, NodeJS e MySql.
+                        Esse também é um projeto do Jovem Programador onde foi pedido o front end de um ecommerce básico,
+                        foi feito em React.
                     </p>
                     <a href="https://github.com/GuilhermeOS/Projetos" target="_blank">Código do Projeto</a>
+                </div>
+                <div class="project">
+                    <h2>Veja Mais Projetos</h2>
+                    <a href="https://github.com/GuilhermeOS" target="_blank">Github</a>
+                </div>
+            </div>
+        </div>
+
+        <div id="dv-modal" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1>Entre em Contato</h1>
+                </div>
+                <div class="modal-body">
+                    <p><a href="https://github.com/GuilhermeOS" target="_blank"><i class="fa-brands fa-github" title="GitHub"> GitHub</i></a></p>
+                    <p><a href="https://www.linkedin.com/in/guilherme-oribka-serafim/" target="_blank"><i class="fa-brands fa-linkedin-in" title="Linkedin"> linkedin</i></a></i></p>
+                    <p>Email: <a href="mailto:guiouribka@gmail.com">guiouribka@gmail.com</a></p>
+                </div>
+                <div class="modal-footer">
+                    <button class="fechar" onclick="closeModal('dv-modal')">Fechar</button>
                 </div>
             </div>
         </div>
     </main>
+
+    <script src="./script/modal.js"></script>
 </body>
 </html>
